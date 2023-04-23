@@ -118,7 +118,7 @@ function draw() {
 }
 
 function addCard() {
-    $("#addCardHere").append(`<img src=${cardFace}>`);
+    $("#addCardHere").append(`<div class="col-3 col-sm-1 "><img src=${cardFace}></div>`);
 }
 
 $(".hide-btn").click(function () {
