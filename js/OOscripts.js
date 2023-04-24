@@ -13,7 +13,7 @@ class Deck {
         let res = await axios.get(`https://deckofcardsapi.com/api/deck/${this.deckID}/draw/?count=1`);
         this.drawnCard = res.data.cards[0];
         this.cardFace = this.drawnCard.image;
-        $("#addCardHere").append(`<div class="col-3 col-sm-1" ><img style="max-width:100px;" src=${this.cardFace}></div>`);
+        $("#addCardHere").append(`<div class="col-1 col-sm-1" ><img style="max-width:100px;" src=${this.cardFace}></div>`);
         
     }
 
